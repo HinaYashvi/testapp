@@ -1,0 +1,57 @@
+<div data-name="dashboard" class="page" >
+	<!--div class="panel panel-left panel-cover">
+      <div class="block">
+        <p>Left Panel content here</p>
+        <p><a class="panel-close" href="#">Close me</a></p>
+        <p><a class="panel-open" href="#" data-panel="right">Open Right Panel</a></p>
+      </div>
+    </div--> 
+
+	<!-- All parts will have "sliding" effect on page transition -->
+	<div class="navbar inner-header">
+	  <!-- Additional "sliding" class -->
+	  <div class="navbar-inner sliding">
+	    <div class="left">
+	      <a href="#" class="link"><!--i class="f7-icons size-22">bars</i--></a>
+	    </div>
+	    <div class="title text-uppercase orange-text">Dashboard</div>
+	    <div class="right">
+	      <a class="link popover-open" href="#" data-popover=".popover-links"><i class="f7-icons size-22 orange-text">more_vertical</i></a>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="popover popover-links">
+    <div class="popover-inner">
+      <div class="list">
+        <ul>
+          <li><a class="list-button item-link" href="#" onclick="logOut()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+    <div class="page-content ">    	
+		<div class="block">		  
+		  	<div class="row">
+		    	<!--div class="col-100 card-content card-content-padding dashboard-blocks text-uppercase block-total"><span>total complains</span><p id="total_complaints" class="fs-2em"></p></div-->
+		    	<strong><span class="text-uppercase fw-700">total complains : <span id="total_complaints" class=""></span></strong></span><a href="/complaints/"><span class="badge">View All</span></a>		    
+		  	</div>		 
+		</div>
+		<div class="block">
+			<div class="border-top"></div>
+		</div>
+		<div class="block mb-20p">
+			<div class="row" id="dashboard-boxes"></div>
+		</div>
+
+	</div><!-- .page-content -->
+
+	<div class="toolbar toolbar-bottom-md inner-footer">
+    <div class="toolbar-inner">
+      <a class="link"></a>
+      <a class="link orange-text">2018 &copy; &nbsp;<span class=""> COMPLAIN MANAGER</span></a>
+      <a class="link"></a> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!--meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:"-->
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'"> 
+  <title>Complaint Manager</title>
+  <link rel="stylesheet" type="text/css" href="css/framework7-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/framework7.css">  
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>  
+  <div id="app">
+      <div class="statusbar"></div>    
+          <div class="view view-main view-init" data-url="/"> 
+              <div class="page" data-name="index">
+                  <div class="page-content login-screen-content">
+                      <div class="login-screen-title  m-t-20p text-capitalize orange-text">Complain Manager</div>
+                      <div class="col-100 tablet-11">
+                        <center><img src="img/icon.png" class="md-only w-25"></center>
+                        <center><img src="img/icon.png" class="ios-only w-18"></center>            
+                      </div>
+
+                      <form class="loginForm" id="loginForm" name="loginForm" >
+
+                          <div class="list form-div no-hairlines-between-ios">
+                              <ul>
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <!--div class="item-title item-label">Username/Mobile</div-->
+                                      <div class="item-input-wrap">
+                                        <div class="inputbox md-only">
+                                          <i class="fa fa-user"></i>
+                                          <input type="text" name="username" id="username" placeholder="Username/Mobile" class="" required validate>
+                                        <span class="input-clear-button"></span>
+                                        </div>
+
+                                        <div class="ios-only inputbox mb-5 ">
+                                          <i class="fa fa-user"></i>
+                                          <input type="text" name="username" id="username" placeholder="Username/Mobile" class="" required validate>
+                                        <span class="input-clear-button"></span>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <!--div class="item-title item-label">Password</div-->
+                                      <div class="item-input-wrap">
+                                        <div class="inputbox md-only">
+                                          <i class="fa fa-lock"></i>
+                                          <input type="password" name="password" id="password" placeholder="Password" class="" required validate>
+                                          <span class="input-clear-button"></span>
+                                        </div>
+
+                                        <div class="ios-only inputbox mb-5">
+                                          <i class="fa fa-lock"></i>
+                                          <input type="password" name="password" id="password" placeholder="Password" class="" required validate>
+                                          <span class="input-clear-button"></span>
+                                        </div> 
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-input-wrap ">
+                                        <a href="#" onclick="checklogin();" class="md-only col button button-fill orange-btn grey-text" >LOG IN</a>
+
+                                        <a href="#" onclick="checklogin();" class="ios-only col button button-big button-fill orange-btn grey-text" >LOG IN</a>
+
+
+                                        
+
+                                      </div>
+
+                                    </div>
+                                  </li> 
+                              </ul>
+                          </div>  
+                                 
+                      </form>      
+
+
+                  </div><!-- .page-content -->
+
+                  <div class="toolbar toolbar-bottom-md footer-bg">
+                    <div class="toolbar-inner">
+                      <a class="link"></a>
+                      <a class="link orange-text text-capitalize ">powered by &nbsp; <span class="fa fa-star gly-spin m-r-5 m-l-5"></span><span class="orange-text text-uppercase"> star one web</span></a>
+                      <a class="link"></a> 
+                    </div>
+                  </div>
+              </div><!-- .page -->
+          </div><!-- view-main -->
+  </div><!-- .app --> 
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/framework7.js"></script>
+  <script type="text/javascript" src="js/routes.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript">
+    if (Framework7.prototype.device.android) { 
+        //alert("android");
+        Dom7('head').append(                  
+          '<link rel="stylesheet" href="css/app-material.css">' 
+        );
+    }else{
+        //alert("ios");
+        Dom7('head').append(
+        '<link rel="stylesheet" href="css/app-ios.css">'
+        );
+    }
+  </script> 
+</body>
+</html>
+
+
+

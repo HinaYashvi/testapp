@@ -9,7 +9,41 @@
   "installed_plugins": {
     "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.phonegap.complaintmanager"
+    }
+  }
 }
